@@ -6,9 +6,9 @@ const Browse = () => {
   },[])
 
   return (
-    <>
-      
-    </>
+    <div id="browse">
+      browse page
+    </div>
   );
 };
 

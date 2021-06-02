@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
@@ -10,42 +11,40 @@ import {
   Settings,
   Show
 } from './pages';
+import { Navbar } from './components';
 
-function App() {
+const App = () => {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route
           exact path="/account"
-          render={Account}
+          component={Account}
         />
         <Route
           exact path="/browse"
-          render={Browse}
+          component={Browse}
         />
         <Route
           exact path="/library"
-          render={Library}
+          component={Library}
         />
         <Route
           exact path="/settings"
-          render={Settings}
+          component={Settings}
         />
         <Route
           path="/show/:name"
-          render={props => {
-            <Show props={props} />
-          }}
+          component={Show}
         />
         <Route
           path="/ep/:id"
-          render={props => {
-            <Episode props={props} />
-          }}
+          component={Episode}
         />
         <Route
           path="*"
-          render={Default}
+          component={Default}
         />
       </Switch>
     </Router>

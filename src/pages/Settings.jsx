@@ -6,8 +6,9 @@ const Settings = () => {
   },[]);
 
   return (
-    <>
-    </>
+    <div id="settings">
+      settings page
+    </div>
   )
 }
 

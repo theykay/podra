@@ -6,8 +6,9 @@ const Library = () => {
   },[])
 
   return (
-    <>
-    </>
+    <div id="library">
+      library page
+    </div>
   )
 }
 

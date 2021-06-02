@@ -1,9 +1,7 @@
-module.exports = {
-  Account: require("./Account"),
-  Browse: require('./Browse'),
-  Default: require('./Default'),
-  Episode: require('./Episode'),
-  Library: require('./Library'),
-  Settings: require('./Settings'),
-  Show: require('./Show')
-};
+export { default as Account } from './Account';
+export { default as Browse } from './Browse';
+export { default as Default } from './Default';
+export { default as Episode } from './Episode';
+export { default as Library } from './Library';
+export { default as Settings } from './Settings';
+export { default as Show } from './Show';

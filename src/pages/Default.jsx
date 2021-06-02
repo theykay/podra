@@ -6,8 +6,9 @@ const Default = () => {
   },[])
 
   return (
-    <>
-    </>
+    <div id="default">
+      default page
+    </div>
   )
 }
 

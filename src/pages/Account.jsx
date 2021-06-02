@@ -6,8 +6,9 @@ const Account = () => {
   }, [])
 
   return (
-    <>
-    </>
+    <div id="account">
+      account page
+    </div>
   )
 }
 
