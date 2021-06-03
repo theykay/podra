@@ -1,2 +1,44 @@
 @use '../../styles/scss/main.scss' as styles;
 
+#navbar {
+  background: styles.$colorLight;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-links-item {
+  display: inline-block;
+  color: styles.$colorLight;
+  width: 100%;
+  &:hover {
+    background: styles.$colorMLight;
+  }
+  &:active {
+    background: styles.$colorMLight;
+  }
+}
+
+.current {
+  color: styles.$colorDark;
+  background: styles.$colorMLight;
+}
+
+.menu-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
