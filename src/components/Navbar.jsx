@@ -1,6 +1,16 @@
+import styled from 'styled-components';
+
+const Header = styled.header`
+  background-color: red
+`;
+
+const ListItem = styled.li`
+
+`;
+
 const Navbar = () => {
   return (
-    <header id="navbar">
+    <Header id="navbar">
       <nav>
         <ul>
           <li>
@@ -14,7 +24,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </Header>
   )
 }
 
