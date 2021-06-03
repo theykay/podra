@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from './styles/useDarkMode';
-import { GlobalStyles } from "./styles/globalStyles";
-import { lightTheme, darkTheme } from "./styles/Themes";
-import "./App.css";
+import { GlobalStyles } from "./styles/partials/globalStyles";
+import { lightTheme, darkTheme } from "./styles/partials/Themes";
+import "./App.scss";
 import {
   Account,
   Browse,

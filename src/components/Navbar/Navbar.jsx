@@ -1,16 +1,8 @@
-import styled from 'styled-components';
-
-const Header = styled.header`
-  background-color: red
-`;
-
-const ListItem = styled.li`
-
-`;
+import './Navbar.scss';
 
 const Navbar = () => {
   return (
-    <Header id="navbar">
+    <header id="navbar">
       <nav>
         <ul>
           <li>
@@ -24,7 +16,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </Header>
+    </header>
   )
 }
 
