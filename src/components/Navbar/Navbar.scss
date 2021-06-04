@@ -21,6 +21,7 @@
   width: 100%;
 }
 
+
 .menu-link {
   display: inline-block;
   text-decoration: none;
@@ -35,4 +36,5 @@
 
 .current {
   background: styles.$colorLight;
+  color: styles.$colorMLight;
 }
