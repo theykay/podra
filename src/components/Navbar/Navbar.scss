@@ -18,27 +18,21 @@
 
 .menu-links-item {
   display: inline-block;
-  color: styles.$colorLight;
   width: 100%;
-  &:hover {
-    background: styles.$colorMLight;
-  }
-  &:active {
-    background: styles.$colorMLight;
-  }
-}
-
-.current {
-  color: styles.$colorDark;
-  background: styles.$colorMLight;
 }
 
 .menu-link {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: styles.$colorDark;
   width: 100%;
   text-align: center;
   padding: 1rem 0;
   font-size: 2rem;
+  // get rid of blue highlighting on click
+  -webkit-tap-highlight-color: transparent;
+}
+
+.current {
+  background: styles.$colorLight;
 }
